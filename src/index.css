@@ -1,0 +1,46 @@
+.avatarPlaceholder {
+  border: var(--custom-border);
+  border-radius: var(--custom-border-radius);
+  width: 35px;
+  height: 35px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-widget {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-widget>.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #444444;
+  text-transform: none !important;
+  transition: all 0.2s ease;
+}
+
+.form-widget .button:hover {
+  background-color: #2a2a2a;
+}
+
+.form-widget .button>.loader {
+  width: 17px;
+  animation: spin 1s linear infinite;
+  filter: invert(1);
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
